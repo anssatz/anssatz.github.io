@@ -179,6 +179,30 @@ body {
     object-position: 50% 50%;
 }
 
+.model-scroll-wrapper {
+    height: 400vh;
+    width: 100%;
+    position: relative;
+}
+
+.model-scroll-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.model-scroll-sticky > model-viewer {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: #ffffff;
+    --poster-color: #ffffff;
+}
+
 .header-description {
     position: absolute;
     height: 100%;
