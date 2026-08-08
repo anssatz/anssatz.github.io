@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css?v=1">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <header>
@@ -114,9 +115,19 @@
     </dialog>
 
 
-    <header class="mark-1-header">
-        <div></div>
-    </header>
+    <section class="model-scroll-wrapper" id="golf-hero">
+        <div class="model-scroll-sticky">
+            <model-viewer id="golf-model"
+                src="./models/mini_compressed.glb?v=1"
+                alt="ANSSATZ Mini"
+                camera-orbit="0deg 75deg 80%"
+                field-of-view="30deg"
+                shadow-intensity="1"
+                interaction-prompt="none"
+                disable-tap>
+            </model-viewer>
+        </div>
+    </section>
 <!--
     <div class="iframe-container">
       <iframe src="https://www.youtube.com/embed/KO_Lju3fk94?vq=hd1080&autoplay=1&loop=1&rel=0&color=white&playlist=KO_Lju3fk94&cc_load_policy=0&controls=1&iv_load_policy==3&modestbranding=1&showinfo=0" width="560" height="315" title="ANSSATZ | Our Promise" frameborder="0" allowfullscreen></iframe>
@@ -164,6 +175,7 @@
             </div>
         </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="./index.js?v=1"></script>
+    <script src="./scripts/golf.js?v=1"></script>
 </body>
 </html>
