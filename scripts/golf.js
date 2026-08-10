@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const startTheta = 0;
     const endTheta = 360;
     const phi = 75;
-    const desktopRadius = '7%';
-    const mobileRadius = '8%';
+    const desktopRadius = '65m';
+    const mobileRadius = '85m';
     const mobileQuery = window.matchMedia('(max-width: 767px)');
 
     let ticking = false;
