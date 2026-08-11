@@ -88,6 +88,13 @@ html {
 @font-face {
   font-family: 'CustomFont'; /* Name your font family */
   src: url('./font/sf-ui-display-light-58646b33e0551.otf'); /* Locate the .ttf file within your directory*/
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./font/sf-ui-display-bold-58646a511e3d9.otf');
+  font-weight: 700;
 }
 body {
     font-family: 'CustomFont', Monserrat;
@@ -211,7 +218,7 @@ body {
 
 .model-scroll-overlay-title {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 8rem;
     letter-spacing: 1px;
     text-align: center;
@@ -220,7 +227,7 @@ body {
 
 .model-scroll-overlay-card {
     position: relative;
-    margin-top: 900px;
+    margin-top: 990px;
     max-width: 700px;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
@@ -234,7 +241,7 @@ body {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    padding: 4px;
+    padding: 2px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0.15) 60%, rgba(0, 0, 0, 0.8) 100%);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -245,8 +252,16 @@ body {
 .model-scroll-overlay-card p {
     color: #ffffff;
     font-size: 3.2rem;
-    text-align: left;
+    text-align: justify;
     margin: 0;
+}
+
+.model-scroll-overlay-card p + p {
+    margin-top: 1.6rem;
+}
+
+.model-scroll-overlay-card strong {
+    font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
@@ -259,7 +274,7 @@ body {
     }
 
     .model-scroll-overlay-card {
-        margin-top: 700px;
+        margin-top: 770px;
         max-width: 90%;
         padding: 2.4rem 2.8rem;
     }

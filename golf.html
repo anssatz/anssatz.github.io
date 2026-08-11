@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./index.css?v=13">
+    <link rel="stylesheet" href="./index.css?v=19">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
@@ -118,17 +118,24 @@
     <section class="model-scroll-wrapper" id="golf-hero">
         <div class="model-scroll-sticky">
             <model-viewer id="golf-model"
-                src="./models/mini2_compressed.glb?v=13"
+                src="./models/mini4_compressed.glb?v=19"
                 alt="ANSSATZ Mini"
-                camera-orbit="0deg 75deg 65m"
+                camera-orbit="0deg 82.5deg 65m"
                 min-camera-orbit="auto auto 5m"
                 field-of-view="30deg"
                 shadow-intensity="0"
                 interaction-prompt="none"
-                environment-image="./models/HDRI1000.jpg?v=13"
-                skybox-image="./models/HDRI1000.jpg?v=13"
+                environment-image="./models/HDRI1000.jpg?v=19"
+                skybox-image="./models/HDRI1000.jpg?v=19"
                 disable-tap>
             </model-viewer>
+        </div>
+        <div class="model-scroll-overlay">
+            <h1 class="model-scroll-overlay-title">El Origen</h1>
+            <div class="model-scroll-overlay-card">
+                <p><strong>Mark 1</strong> es el prototipo de vehículo EV/Híbrido deportivo que <strong>ANSSATZ</strong> desarrolló para demostrar que México tiene la capacidad de entregar productos genuinamente inovadores, dignos de enfrentar al ingenio internacional.</p>
+                <p><strong>El prototipo</strong>, nunca comercializado al público, le permitió a la marca desarrollar las tecnologías que posteriormente integraría en soluciones subsecuentes.</p>
+            </div>
         </div>
     </section>
 <!--
@@ -178,7 +185,7 @@
             </div>
         </div>
     </section>
-    <script src="./index.js?v=13"></script>
-    <script src="./scripts/golf.js?v=13"></script>
+    <script src="./index.js?v=19"></script>
+    <script src="./scripts/golf.js?v=19"></script>
 </body>
 </html>
